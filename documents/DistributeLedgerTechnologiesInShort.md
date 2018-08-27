@@ -5,16 +5,19 @@
 
 ###	The problematic of the internship was:
 
-	“	The project is to develop a proof of concept of an application. This app is mean to create virtual legacy -it is not here question of legal issues - but more simply to allowed someone to 		pass data to someone else at a given time.
-	This require a Database with a live expectancy far superior to the on of a storage hardware, and even superior to the time of existence of a company. 
-	Moreover it also need the data to be accessible only by a few individual and only at specifics conditions, this conditions could be the demise of the creator or/and a specific event or date.
+	“	The project is to develop a proof of concept of an application. This app is mean to create virtual legacy -it 
+	is not here question of legal issues - but more simply to allowed someone to
+ 	pass data to someone else at a given time.
+	This require a Database with a live expectancy far superior to the on of a storage hardware, and even superior to the 		time of existence of a company. 
+	Moreover it also need the data to be accessible only by a few individual and only at specifics conditions,
+	this conditions could be the demise of the creator or/and a specific event or date.
 
-	In an other way, a client can create a ‘will/ bequest’, in this file he (and only him) can create and store files intended for specify peoples at determined events.
+	In an other way, a client can create a ‘will/ bequest’, in this file he (and only him) can create and store files 		intended for specify peoples at determined events.
 	At the trigger event the storage could be visible to whom it May concern if all the requirements are fulfill.
-	Example:  mr X create an account and a legacy, on it, he add information about a bank account  his children would only see after there 18th birthday. At an other time he add a specific “happy 	birthday” video to each of his children that should come repetitively every years for 5 years.
+	Example:  mr X create an account and a legacy, on it, he add information about a bank account  his children would only 		see after there 18th birthday. At an other time he add a specific “happy 	birthday” video to each of his children 	that should come repetitively every years for 5 years.
 	”
 
-	To answer this problematic I was given a time to study the multiples possibilities  and I came to the same conclusion that the one initially presented was proposed, or that DLT (as blockchains) where a relevant option given the needs of development.  Needs that are a long term durable database.
+To answer this problematic I was given a time to study the multiples possibilities  and I came to the same conclusion that the one initially presented was proposed, or that DLT (as blockchains) where a relevant option given the needs of development.  Needs that are a long term durable database.
 It can be point out that there is almost no project that are even close to that idea quit promising, the closest that can be found is a time capsule app ‘the incubate’ app  with 25 years at most of insurance.
 
 
@@ -32,10 +35,10 @@ This document is structures around questions from relay generals one down to my 
 The pillars on which they where conceived are : transparency, reliability and incorruptibility.
 (Some will add Decentralization and Trust)
 
-##This being said, to what good are they? 
+## This being said, to what good are they? 
 	This method create ledgers that are not hold by a superior authority but can still represent a third man in a transaction, a third man that will be reliable and incorruptible. The first use of DLT (the most simple as it was engineered for that purpose) it the transaction of assets. Those assets can represent an actual physical object (a fish, a car,..) an abstract one (a contract…) or simply a currency it is then case if called a crypto-currency. 
 
-####It should be point out a few issues inherent to this technology:
+#### It should be point out a few issues inherent to this technology:
 	it can not support heavy package of data, indeed as it is own by all it would require large storage for all participant. 
 An other point is that as they are possess by every one who take part in the network if a non negligible part of this network decided to go against it it is possible to break the whole thing ( however most consensus would require between 33% up to 51% of the network to be malicious)
 
@@ -75,7 +78,7 @@ The Hyperledger Project made by the Linux foundation host five different project
 -Iroha, a "normal" blockchain implement in C++, can run on mobile, have a new BFT algorithm.(is composed of clients an peers)
 
 
-####note:
+#### note:
 -Kafka is a: "Kafka is primarily a distributed, horizontally-scalable, fault-tolerant, commit log."
 or a system that recive and distribute messages, it run basic verification and is only fault tolerant.
 
@@ -117,7 +120,7 @@ The issues:
 	This one have stopped me, indeed as all data on a blockchain are accessible through the installation of a node, they are then to be encrypted, but to be read by someone at some time mean two time encrypted. An as to allowed the access to data to peoples that does not yet have the app or a mean to be contacted, the first code must be given an other way (i.e. physically).  The other key can not be on the blockchain (where it could be read by anyone).
 
 
-##What have I reach ?
+## What have I reach ?
 
 I came to the conclusion that this technologies had a conception flaw for our use, indeed the security on a blockchain is only maintained by cryptography and we needed for the app to work two layer of encryption, on for the identity fully untruest to the Clients (receivers and creator) and one for the events entrusted to us. But this mean that we must keep our keys outsides of the blockchain, else the receiver could forced his access through the database with only his identification key. This obligation for us to keep a server in order to maintain the app go against the concept of blockchains.
 (it could also be point out tat a few nodes could have been isolated and lured into giving there data through malicious messages).

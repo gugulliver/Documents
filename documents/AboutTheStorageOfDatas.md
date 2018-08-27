@@ -67,7 +67,7 @@ Tahoe LAFS seems to be the most modular one thanks to its peer-to-peer approach.
  	non adaptation to the current meta) just  there to
   	show that it existed 
 
-##System file storage
+##	System file storage
 
 ###	-Swarm
 	Swarm’s broader objective is to provide infrastructure services for developers of decentralised
@@ -78,10 +78,9 @@ Tahoe LAFS seems to be the most modular one thanks to its peer-to-peer approach.
 	The Swarm public gateways are temporary and users should not rely on their existence for
  	production services.
 
-
-
 ###	-Gluster,
-	 GlusterFS is a scalable network file system suitable for data-intensive tasks such as 	cloud storage and media streaming
+	 GlusterFS is a scalable network file system suitable for data-intensive tasks such as
+ 	cloud storage and media streaming
 	[https://www.gluster.org/]
 	GlusterFS is latency dependent. Since self-heal checks are done when establishing the FD and
  	the client connects to all the servers in the volume simultaneously, high latency (mult-zone)
